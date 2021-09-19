@@ -1,2 +1,2 @@
 # discordbot
-attempt at a discord bot
+Discord bot made for learning purposes
