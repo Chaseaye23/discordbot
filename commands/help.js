@@ -12,7 +12,8 @@ module.exports = {
         {name: 'clear', value: "Clears the selected amount of messages"},
         {name: 'nuke', value: "Nukes a channel."}
         )
-        .setImage('https://i.ytimg.com/vi/2MCFwDhoqqc/sddefault.jpg')
+        .setAuthor('Made by Chaseaye (shred#6969)')
+        .setImage('https://c.tenor.com/kHcmsxlKHEAAAAAC/rock-one-eyebrow-raised-rock-staring.gif')
         .setFooter('if you read this u hella gay');
            // console.log(message.channel)
             message.channel.send({embeds: [newEmbed]});

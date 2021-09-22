@@ -1,23 +1,12 @@
+
 module.exports = {
     name: 'nuke',
-    description: "nukes the channel",
-    async execute(client, message, args){
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
-            message.channel.bulkDelete(100);
+    description: 'nukes channel',
+    execute(bot, message, Discord) {
+        message.channel.clone().then(channel => {    
+            channel.send('nuked')
+        })
+        message.channel.delete()
+        
     }
-}
+};
