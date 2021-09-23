@@ -1,7 +1,7 @@
 const { bot, CategoryChannel, MessageEmbed } = require("discord.js")
 module.exports = {
     name: 'help',
-    aliases: ['help', 'commands'],
+    aliases: ['commands'],
     permissions: ["SEND_MESSAGES"],
     description: 'embeds help messasge',
      async execute(bot, message, cmd, args, Discord){
